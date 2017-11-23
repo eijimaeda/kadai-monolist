@@ -15,11 +15,15 @@
 
   <body>
     <%= render 'layouts/navbar' %>
+    
+    <%= yield :cover %>
+    
     <div class="container">
       <%= render 'layouts/flash_messages' %>
-
-      <%= yield :cover %>
+      
+      <%= yield %>
     </div>
+    
     <%= render 'layouts/footer' %>
   </body>
 </html>
